@@ -10,6 +10,12 @@
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
     },
+    "authors": [
+        {
+            "name": "Dmitriy Korsunov",
+            "role": "Backend Developer"
+        },
+    ],
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.14",
         "fakerphp/faker": "^1.23",
