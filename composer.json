@@ -14,7 +14,7 @@
         {
             "name": "Dmitriy Korsunov",
             "role": "Backend Developer"
-        },
+        }
     ],
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.14",
