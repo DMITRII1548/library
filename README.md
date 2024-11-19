@@ -11,7 +11,7 @@
 - npm 
 
 ## Процесс установки
-- скопируйте .env.example в .env и настройте подключение к бд
+- скопируйте .env.example в .env и настройте подключение к бд и APP_URL
 - composer i
 - php artisan key:generate
 - npm i
