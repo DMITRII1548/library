@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Laravel\Fortify\Features;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 return [
 
