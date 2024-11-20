@@ -11,7 +11,3 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
         return view('welcome');
     });
 });
-
-Route::get('/text', function () {
-    return LaravelLocalization::getCurrentLocale();
-});
