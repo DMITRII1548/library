@@ -1,0 +1,113 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.pole_register{
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    height: auto;
+    margin: 143px 234px;
+}
+
+.pole_and_register_and_login{
+    display: flex;
+    align-items: center ;
+    height: 923px;
+}
+
+.title_register{
+    font-size: 40px;
+}
+
+.pole_name, .pole_email, .pole_password, .repeat_password, .pole_proffesia, .button_register{
+    margin-bottom: 14px;
+}
+
+.pole_proffesia{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pole form:first-child{
+    margin-top: 78px;
+}
+
+.pole form label{
+    font-size: 20px;
+}
+
+.pole_name input, .pole_email input, .pole_password input, .repeat_password input{
+    width: 360px;
+    height: 30px;
+    padding-left: 11px;
+}
+
+.button_register{
+    width: 291px;
+    height: 57px;
+    background-color: #358BB0;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.stydent{
+    margin-left: 20px;
+}
+
+.button_login{
+    width: 291px;
+    height: 57px;
+    background-color: #358BB0;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button_login:hover, .button_register:hover{
+    background-color: #3a7a96;
+}
+
+.pole_info_login{
+    color: white;
+}
+
+.pole_info_login h1{
+    text-align: center;
+}
+
+
+.pole_info_login h2{
+    text-align: center;
+    margin-top: 33px;
+}
+
+
+.pole_login{
+    margin: 266px 317px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+}
+
+.pole_login_background{
+    background: linear-gradient(217deg , rgba(0, 57, 115, 1), rgba(229, 229, 190, 1));
+    width: 960px;
+    height: 1001px;
+}
+
+.text-danger {
+    color: red;
+}

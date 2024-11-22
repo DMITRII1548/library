@@ -10,6 +10,8 @@ export default defineConfig({
 
                 'resources/css/book/show.css',
 
+                'resources/css/auth/register.css',
+
 
                 'resources/js/app.js',
             ],
