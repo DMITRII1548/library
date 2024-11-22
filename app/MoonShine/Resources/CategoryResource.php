@@ -23,6 +23,8 @@ class CategoryResource extends ModelResource
 
     protected string $title = 'Категории';
 
+    public string $column = 'title'; 
+
     /**
      * @return list<MoonShineComponent|Field>
      */
