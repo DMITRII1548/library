@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 205px;
+    height: 190px;
+}
+
+.logo{
+    margin-right: 574px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.selector_lung button{
+    border: none;
+    cursor: pointer;
+    background-color: #3D9FCA;
+    color: white;
+    width: 103px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.selector_lung{
+    position: relative;
+}
+
+.language_menu{
+    position: absolute;
+    z-index: 1;
+    background-color: #3D9FCA;
+    width: 103px;
+    height: 56px;
+    margin-top: 3px;
+    color: white;
+    letter-spacing: 0.3px;
+    border-radius: 0 10px 0 10px;
+}
+
+.language_menu h3{
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.switch_background button{
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    width: 85px;
+    height: 37px;
+    background-image: url(/assets/imgs/header/background_switch.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85px;
+}
+
+.switch_background button img{
+    width: 27px;
+    height: 27px;
+    margin-right: 40px;
+}
