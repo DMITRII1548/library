@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use MoonShine\Exceptions\MoonShineNotFoundException;
 use MoonShine\Forms\LoginForm;
 use MoonShine\Http\Middleware\Authenticate;

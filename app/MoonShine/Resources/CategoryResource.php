@@ -6,7 +6,6 @@ namespace App\MoonShine\Resources;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Category;
-
 use MoonShine\Resources\ModelResource;
 use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
@@ -35,7 +34,7 @@ class CategoryResource extends ModelResource
             Block::make([
                 ID::make()->sortable(),
                 Text::make('Наименование', 'title'),
-                HasMany::make('Книги', 'books', resource: new BookResource)
+                HasMany::make('Книги', 'books', resource: new BookResource())
                     ->onlyLink(),
             ]),
         ];
