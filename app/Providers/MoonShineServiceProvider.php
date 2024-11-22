@@ -15,6 +15,8 @@ use MoonShine\Menu\MenuElement;
 use MoonShine\Pages\Page;
 use Closure;
 use App\MoonShine\Resources\CategoryResource;
+use App\MoonShine\Resources\RoleResource;
+use App\MoonShine\Resources\UserResource;
 
 class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 {
@@ -23,7 +25,9 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
      */
     protected function resources(): array
     {
-        return [];
+        return [
+            new RoleResource(),
+        ];
     }
 
     /**
@@ -53,6 +57,7 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 
             MenuItem::make('Категории', new CategoryResource()),
             MenuItem::make('Книги', new BookResource()),
+            MenuItem::make('Пользователи', new UserResource()),
         ];
     }
 
