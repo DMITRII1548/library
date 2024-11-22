@@ -62,8 +62,8 @@ return [
     ],
 
     'model_resources' => [
-        'default_with_import' => true,
-        'default_with_export' => true,
+        'default_with_import' => false,
+        'default_with_export' => false,
     ],
 
     'auth' => [
@@ -91,7 +91,6 @@ return [
         'pipelines' => [],
     ],
     'locales' => [
-        'en',
         'ru',
     ],
 
