@@ -13,6 +13,7 @@ use MoonShine\Fields\ID;
 use MoonShine\Fields\Field;
 use MoonShine\Fields\Text;
 use MoonShine\Components\MoonShineComponent;
+use MoonShine\Fields\Relationships\HasMany;
 
 /**
  * @extends ModelResource<Category>
@@ -23,7 +24,7 @@ class CategoryResource extends ModelResource
 
     protected string $title = 'Категории';
 
-    public string $column = 'title'; 
+    public string $column = 'title';
 
     /**
      * @return list<MoonShineComponent|Field>
@@ -34,6 +35,8 @@ class CategoryResource extends ModelResource
             Block::make([
                 ID::make()->sortable(),
                 Text::make('Наименование', 'title'),
+                HasMany::make('Книги', 'books', resource: new BookResource)
+                    ->onlyLink(),
             ]),
         ];
     }
