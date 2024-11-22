@@ -7,6 +7,10 @@ export default defineConfig({
             input: [
                 'resources/css/header.css',
                 'resources/css/home.css',
+
+                'resources/css/book/show.css',
+
+
                 'resources/js/app.js',
             ],
             refresh: true,

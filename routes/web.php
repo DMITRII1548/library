@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Http\Controllers\Web\BookController;
 use App\Http\Controllers\Web\PageController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -9,4 +10,8 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
     Route::get('/', [PageController::class, 'home'])->name('pages.index');
+
+    Route::prefix('books')->group(function () {
+        Route::get('{book}', [BookController::class, 'show'])->name('books.show');
+    });
 });

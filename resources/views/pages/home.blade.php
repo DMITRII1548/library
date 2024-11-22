@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('head')
-    @vite(['resources/css/home.css', 'resources/css/header.css'])
+    @vite(['resources/css/home.css'])
 @endsection
 
 @section('content')
