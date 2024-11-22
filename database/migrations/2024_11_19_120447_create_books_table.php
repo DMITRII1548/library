@@ -23,8 +23,11 @@ return new class () extends Migration {
             $table->string('image', 4096);
             $table->foreignIdFor(User::class)
                 ->nullable()
-                ->index();
-            $table->foreignIdFor(Category::class)->index();
+                ->index()
+                ->onDelete('cascade');
+            $table->foreignIdFor(Category::class)
+                ->index()
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

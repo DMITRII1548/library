@@ -17,8 +17,12 @@ return new class () extends Migration {
         Schema::dropIfExists('book_user_favorites');
         Schema::create('book_user_favorites', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Book::class)->index();
-            $table->foreignIdFor(User::class)->index();
+            $table->foreignIdFor(Book::class)
+                ->index()
+                ->onDelete('cascade');
+            $table->foreignIdFor(User::class)
+                ->index()
+                ->onDelete('cascade');
             $table->timestamps();
 
             $table->unique(['user_id', 'book_id']);
