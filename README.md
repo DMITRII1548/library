@@ -19,3 +19,4 @@
 - php artisan migrate
 - php artisan db:seed // для прода
 - php artisan db:seed --class=DevSeeder // для среды разработки
+- php artisan storage:link
