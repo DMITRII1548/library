@@ -72,8 +72,8 @@ class BookResource extends ModelResource
             'title' => 'required|string|max:255',
             'author' => 'required|string|max:255',
             'description' => 'required|string|max:5000',
-            'file' => 'required|file|mimes:pdf',
-            'image' => 'required|image',
+            'file' => [$this->getModel() ? 'nullable' : 'required', 'file', 'mimes:pdf'],
+            'image' => [$this->getModel() ? 'nullable' : 'required', 'image'],
             'category_id' => 'required|integer'
         ];
     }
