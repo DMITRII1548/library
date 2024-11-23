@@ -1,11 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Contracts\View\View;
-use Illuminate\Http\Request;
 
 class CategoryBookController extends Controller
 {
@@ -15,7 +16,7 @@ class CategoryBookController extends Controller
         $categories = Category::get();
 
         return view('categories.books.index', compact(
-            'books', 
+            'books',
             'category',
             'categories'
         ));

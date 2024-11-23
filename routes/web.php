@@ -6,7 +6,6 @@ use App\Http\Controllers\Web\BookController;
 use App\Http\Controllers\Web\CategoryBookController;
 use App\Http\Controllers\Web\PageController;
 use App\Http\Controllers\Web\UserBookController;
-use App\Models\Role;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
