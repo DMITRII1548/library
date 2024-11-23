@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Laravel\Fortify\Features;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 return [
 
@@ -88,7 +89,7 @@ return [
     |
     */
 
-    'prefix' => '{lang}',
+    'prefix' => '{lang?}',
 
     'domain' => null,
 
@@ -103,7 +104,7 @@ return [
     |
     */
 
-    'middleware' => ['web'],
+    'middleware' => ['web', 'localeParameter'],
 
     /*
     |--------------------------------------------------------------------------

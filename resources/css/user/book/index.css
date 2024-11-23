@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    margin-left: 70px;
+}
+
+.title {
+    width: 247px;
+    height: 58px;   
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    margin-left: 15px;
+}
+
+.heart {
+    width: 32px;
+    height: 30px;
+}
+
+.title h1 {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.favourite-books {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    gap: 20px;
+    width: auto ;
+    overflow-x: scroll;
+}
+
+.book {
+    width: 240px;
+    height: 480px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.book-1 {
+    text-align: center;
+    text-decoration: none;
+}
+
+.book img{
+    width: 200px;
+    height: 320px;
+}
+
+.book h2 {
+    color: black;
+    margin-top: 10px;
+}
+
+.book p {
+    color: gray;
+    margin-top: 5px;
+}
+
+.added-by-you {
+    height: 58px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    width: 95%;
+    margin-left: 15px;
+}
+
+.books_added {
+    width: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.upload {
+    width: 240px;
+    height: 47px;
+    text-decoration: none;
+    background-color: #358BB0; 
+    color: white;
+    font-size: 26   px; 
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    line-height: 47px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload:hover {
+    background-color: #3a7b84; 
+}

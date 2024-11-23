@@ -12,6 +12,8 @@ export default defineConfig({
 
                 'resources/css/auth/register.css',
 
+                'resources/css/user/book/index.css',
+
 
                 'resources/js/app.js',
             ],
