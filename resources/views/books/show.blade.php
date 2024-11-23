@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('head')
-    @vite(['resources/css/book/show.css'])
+    @vite(['resources/js/app.js', 'resources/css/book/show.css'])
 @endsection
 
 @section('content')
@@ -23,7 +23,7 @@
             </div>
             <div class="buttons">
                 <a href="{{ route('books.read', $book->id) }}" class="btn_read">{{ __('messages.read') }}</a>
-                <div class="btn_like">
+                <div class="btn_like" onclick="addToFavorite({{ auth()->user()->id }}, {{ $book->id }})">
                     <label class="ui-like">
                         <input type="checkbox">
                         <div class="like">
@@ -35,3 +35,12 @@
         </div>
     </div>
 @endsection
+
+@section('scripts')
+<script>
+    function addToFavorite(user, book) {
+        axios.post(`/api/users/${user}/books/${book}/favorite`)
+    }
+</script>
+@endsection
+

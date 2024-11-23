@@ -15,7 +15,7 @@ main {
 
 .title {
     width: 247px;
-    height: 58px;   
+    height: 58px;
     display: flex;
     align-items: center;
     margin-top: 120px;
@@ -35,7 +35,7 @@ main {
 .favourite-books {
     margin-top: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     margin-right: 30px;
     gap: 20px;
     width: auto ;
@@ -70,7 +70,7 @@ main {
 }
 
 .added-by-you {
-    height: 58px;   
+    height: 58px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,9 +89,9 @@ main {
     width: 240px;
     height: 47px;
     text-decoration: none;
-    background-color: #358BB0; 
+    background-color: #358BB0;
     color: white;
-    font-size: 26   px; 
+    font-size: 26   px;
     font-family: Arial, sans-serif;
     font-weight: normal;
     text-align: center;
@@ -102,5 +102,5 @@ main {
 }
 
 .upload:hover {
-    background-color: #3a7b84; 
+    background-color: #3a7b84;
 }
