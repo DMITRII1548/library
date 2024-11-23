@@ -6,7 +6,7 @@
         <a href="{{ route('users.books.index') }}">{{ __('messages.header.menu.my_books') }}</a>
 
         @guest
-            <a href="../login_and_register/login_and_register.html">{{ __('messages.header.menu.login') }}</a>
+            <a href="{{ route('login', LaravelLocalization::setLocale()) }}">{{ __('messages.header.menu.login') }}</a>
             <a href="{{ route('register', LaravelLocalization::setLocale()) }}">{{ __('messages.header.menu.register') }}</a>
         @endguest
 
