@@ -33,7 +33,7 @@
         </div>
         <div class="pole_login_background">
             <div class="pole_login">
-                <div class="logotip"><a href="../glavna/index.html"><img src="{{ asset('assets/imgs/auth/logo.png') }}" alt=""></a></div>
+                <div class="logotip"><a href="{{ route('books.index') }}"><img src="{{ asset('assets/imgs/auth/logo.png') }}" alt=""></a></div>
                 <div class="pole_info_login">
                     <h1>{{ __('messages.login.info.title') }}</h1>
                     <h2>{{ __('messages.login.info.description') }}</h2>

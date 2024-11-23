@@ -8,6 +8,7 @@ export default defineConfig({
                 'resources/css/header.css',
                 'resources/css/home.css',
 
+                'resources/css/book/index.css',
                 'resources/css/book/show.css',
 
                 'resources/css/auth/register.css',

@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    margin-left: 70px;
+}
+
+.title {
+    width: 247px;
+    height: 58px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.burger {
+    width: 36px;
+    height: 25px;
+}
+
+.title h1 {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.menu {
+    width: 297px;
+    height: 63px;
+    font-size: 18px;
+    margin-top: 100px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.profession {
+    width: 122px;
+    height: 18px;
+}
+
+.profession-menu {
+    border: 1px solid black;
+    width: 296px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.profession-menu img {
+    width: 9px;
+    height: 6px;
+    margin-left: 60px;
+}
+
+.profession-menu p {
+    margin-left: 10px;
+}
+
+.promo-books {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.book {
+    width: 240px;
+    height: 450px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.book-1 {
+    text-align: center;
+    text-decoration: none;
+}
+
+.book img{
+    width: 200px;
+    height: 320px;
+}
+
+.book h2 {
+    color: black;
+    margin-top: 10px;
+}
+
+.book p {
+    color: gray;
+    margin-top: 5px;
+}
+
+.see-more{
+    margin-left: 46%;
+}
+
+.see-more a{
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+}
+
+.swipe_page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.page nav{
+    cursor: pointer;
+}
+
+#page_catalog:focus{
+    background-color: #F58F8F;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.next{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.variant_profession_menu{
+    background-color: white;
+    box-shadow: -6px 5px 9px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    width: 296px;
+    margin-top: 5px;
+}
+
+.variant_profession_menu h3, a{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+}
+
+.d-none {
+    display: none !important;
+}

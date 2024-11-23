@@ -13,6 +13,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::get('', [PageController::class, 'home'])->name('pages.index');
 
     Route::prefix('books')->group(function () {
+        Route::get('', [BookController::class, 'index'])->name('books.index');
         Route::get('{book}', [BookController::class, 'show'])->name('books.show');
         Route::get('{book}/read', [BookController::class, 'read'])->name('books.read');
     });

@@ -1,7 +1,7 @@
 <header>
     <div class="logo"><img src="{{ asset('assets/imgs/header/logotip.png') }}" alt="Логотип"></div>
     <nav>
-        <a href="../catalog/catalog.html">{{ __('messages.catalog') }}</a>
+        <a href="{{ route('books.index') }}">{{ __('messages.catalog') }}</a>
         <a href="">{{ __('messages.header.menu.about') }}</a>
         <a href="{{ route('users.books.index') }}">{{ __('messages.header.menu.my_books') }}</a>
 
