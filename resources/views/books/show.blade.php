@@ -22,7 +22,7 @@
                 </p>
             </div>
             <div class="buttons">
-                <button class="btn_read">{{ __('messages.read') }}</button>
+                <a href="{{ route('books.read', $book->id) }}" class="btn_read">{{ __('messages.read') }}</a>
                 <div class="btn_like">
                     <label class="ui-like">
                         <input type="checkbox">

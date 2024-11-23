@@ -73,6 +73,9 @@
 }
 
 .btn_read{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 193px;
     height: 43px;
     border: none;

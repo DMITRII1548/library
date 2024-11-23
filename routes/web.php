@@ -14,6 +14,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 
     Route::prefix('books')->group(function () {
         Route::get('{book}', [BookController::class, 'show'])->name('books.show');
+        Route::get('{book}/read', [BookController::class, 'read'])->name('books.read');
     });
 
     Route::prefix('users/books')->middleware('auth')->group(function () {

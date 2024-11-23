@@ -16,4 +16,9 @@ class BookController extends Controller
 
         return view('books.show', compact('book'));
     }
+
+    public function read(Book $book): View
+    {
+        return view('books.read', compact('book'));
+    }
 }
