@@ -39,7 +39,7 @@
                     <h2>{{ __('messages.login.info.description') }}</h2>
                 </div>
                 <div class="login">
-                    <button class="button_login">{{ __('messages.login.info.btn') }}</button>
+                    <a href="{{ route('register', LaravelLocalization::setLocale()) }}" class="button_login">{{ __('messages.login.info.btn') }}</a>
                 </div>
             </div>
         </div>
