@@ -3,8 +3,10 @@
 declare(strict_types=1);
 
 use App\Http\Controllers\Web\BookController;
+use App\Http\Controllers\Web\CategoryBookController;
 use App\Http\Controllers\Web\PageController;
 use App\Http\Controllers\Web\UserBookController;
+use App\Models\Role;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -19,7 +21,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     });
 
     Route::prefix('users/books')->middleware('auth')->group(function () {
-        Route::get('/', [UserBookController::class, 'index'])->name('users.books.index');
+        Route::get('', [UserBookController::class, 'index'])->name('users.books.index');
+    });
+
+    Route::prefix('categories/{category}/books')->group(function () {
+        Route::get('', [CategoryBookController::class, 'index'])->name('categories.books.index');
     });
 });
 

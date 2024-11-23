@@ -15,7 +15,7 @@
                 <p>{{ __('messages.professions') }}</p>
             </div>
             <div class="profession-menu" id="switch-profession">
-                <p>{{ __('messages.professions') }}</p>
+                <p>{{ $category->title }}</p>
                 <img src="{{ asset('assets/imgs/books/index/Vector 2.png') }}" alt="">
             </div>
             <div class="variant_profession_menu d-none" id ="menu">
@@ -36,6 +36,7 @@
             @empty
                 <h1>{{ __('messages.empty') }}</h1>         
             @endforelse
+
         </div>
         {{ $books->links('vendor.pagination.default') }}
     </main>

@@ -12,5 +12,15 @@
     @include('includes.global.header')
     @yield('content')
     @yield('scripts')
+    <script>
+        {
+            const switchLangMenu = document.getElementById('switchLangMenu')
+            const langMenu = document.getElementById('lang-menu')
+
+            switchLangMenu.onclick = () => {
+                langMenu.classList.toggle('d-none')
+            }            
+        }
+    </script>
 </body>
 </html>

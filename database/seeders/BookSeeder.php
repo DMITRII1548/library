@@ -18,10 +18,10 @@ class BookSeeder extends Seeder
         $categories = Category::factory()->count(3)->create();
 
         foreach ($categories as $category) {
-            Book::factory()
-                ->count(5)
-                ->state(['category_id' => $category->id])
-                ->create();
+            Book::factory(5)
+                ->create([
+                    'category_id' => $category->id,
+                ]);
         }
     }
 }
