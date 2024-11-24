@@ -1,11 +1,3 @@
-body{
-    padding: 0;
-    margin: 0;
-}
-
-.d-none {
-    display: none !important;
-}
 
 *{
     margin: 0;
@@ -62,19 +54,26 @@ nav a {
 .language_menu{
     position: absolute;
     z-index: 1;
-    background-color: #3D9FCA;
-    width: 103px;
-    height: 56px;
     margin-top: 3px;
     color: white;
     letter-spacing: 0.3px;
+    list-style-type: none;
+    background-color: #3D9FCA;
     border-radius: 0 10px 0 10px;
+    display: none;
 }
 
-.language_menu h3{
-    margin-top: 4px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+.language_item{
+    cursor: pointer;
+    width: 103px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.language_item:hover{
+    background-color: #3f86a5;
+    border-radius: 0 10px 0 10px;
 }
 
 .switch_background button{
@@ -83,7 +82,7 @@ nav a {
     border-radius: 100px;
     width: 85px;
     height: 37px;
-    background-image: url(/assets/imgs/header/background_switch.png);
+    background-image: url(../);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 85px;
@@ -93,4 +92,18 @@ nav a {
     width: 27px;
     height: 27px;
     margin-right: 40px;
+}
+
+.icon_earth{
+    position: absolute;
+    z-index: 1;
+    margin-top: 9px;
+    margin-left: 16px;
+}
+
+.icon_drop_down_language{
+    position: absolute;
+    z-index: 1;
+    margin-top: -19px;
+    margin-left: 76px;
 }

@@ -18,6 +18,20 @@
         @endauth
 
         <div class="selector_lung">
+            <img class="icon_earth" src="{{ asset('assets/imgs/header/Group 62.svg') }}" alt="">
+            <button class="language_name">{{ LaravelLocalization::setLocale() ?? 'RU' }} </button>
+            <img class="icon_drop_down_language" src="./img/Vector 1.png" alt="">
+            <div class="language_menu">
+                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                        <li class="language_item">
+                            <a style="color: white" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                {{ $properties['native'] }}
+                            </a>
+                        </li>
+                @endforeach
+            </div>
+        </div>
+        {{-- <div class="selector_lung">
             <button id="switchLangMenu"><img src="{{ asset('assets/imgs/header/Group 62.svg') }}" alt="">  {{ LaravelLocalization::setLocale() ?? 'RU' }}  <img src="{{ asset('assets/imgs/header/Vector 1.png') }}" alt=""></button>
             <div class="language_menu d-none" id="lang-menu">
                 @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
@@ -28,7 +42,7 @@
                     </h3>
                 @endforeach
             </div>
-        </div>
+        </div> --}}
         <div class="switch_background">
             <button><img src="{{ asset('assets/imgs/header/sun.png') }}" alt=""></button>
         </div>

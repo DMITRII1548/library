@@ -14,12 +14,27 @@
     @yield('scripts')
     <script>
         {
-            const switchLangMenu = document.getElementById('switchLangMenu')
-            const langMenu = document.getElementById('lang-menu')
+            const languageName = document.querySelector('.language_name');
+            const languageMenu = document.querySelector('.language_menu');
+            const languageItem = document.querySelectorAll('.language_item');
 
-            switchLangMenu.onclick = () => {
-                langMenu.classList.toggle('d-none')
-            }            
+
+            languageName.addEventListener('click', () => {
+                languageMenu.style.display = (languageMenu.style.display === 'none' || languageMenu.style.display === '') ? 'block' : 'none';
+            });
+
+            languageItem.forEach(item => {
+                item.addEventListener('click', () =>{
+                    languageName.textContent = item.textContent;
+                    languageMenu.style.display = 'none';
+                })
+            });
+
+            window.addEventListener('click', (e) => {
+                if(!e.target.closest('.language_name')){
+                    languageMenu.style.display = 'none';
+                }
+            });
         }
     </script>
 </body>
